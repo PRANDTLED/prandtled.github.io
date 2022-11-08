@@ -15,14 +15,10 @@ let message = `Имя: `;
 //   message += `<b>Почта: </b> ${this.email.value}\n`;
 //   message += `<b>UserId: </b> ${tg.initDataUnsafe.user.id}`;
 // });
-alert(document);
-console.log("LOL");
-alert(document.getElementById("name"));
+
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
 //   alert("WOW");
-     const input = document.getElementById("name");
-     message += `${input.value}`;
-     alert(message);
-  console.log("LOL");
+  const input = document.getElementById("name");
+  message += `${input.value}`;
   tg.sendData(message);
 });
