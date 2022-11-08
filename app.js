@@ -15,12 +15,11 @@ let message = `Имя: `;
 //   message += `<b>Почта: </b> ${this.email.value}\n`;
 //   message += `<b>UserId: </b> ${tg.initDataUnsafe.user.id}`;
 // });
-
+alert(document);
+alert(document.getElementById("name"));
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
 //   alert("WOW");
 //   const input = document.getElementById("name");
 //   message += `${input.value}`;
-  alert(document)
-  alert(document.getElementById("name");)
   tg.sendData(message);
 });
