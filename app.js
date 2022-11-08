@@ -20,5 +20,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
 //   alert("WOW");
 //   const input = document.getElementById("name");
 //   message += `${input.value}`;
+  alert(document)
+  alert(document.getElementById("name");)
   tg.sendData(message);
 });
