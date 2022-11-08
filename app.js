@@ -4,7 +4,6 @@ tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#0d6efd";
-tg.MainButton.type = "submit";
 tg.MainButton.show();
 
 let item = "";
@@ -18,5 +17,11 @@ document.getElementById("tg").addEventListener("submit", function (e) {
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
+  document.getElementById("tg").addEventListener("submit", function (e) {
+  e.preventDefault();
+  message += `<b>Отправитель: </b> ${this.name.value}\n`;
+  message += `<b>Почта: </b> ${this.email.value}\n`;
+  message += `<b>UserId: </b> ${tg.initDataUnsafe.user.id}`;
+});
   tg.sendData(message);
 });
