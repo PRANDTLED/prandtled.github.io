@@ -19,5 +19,5 @@ let message = `Имя: `;
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
   const input = document.getElementById("name"); // Извлекаем элемент input
   message += `${input.value}`;
-  tg.sendData(name);
+  tg.sendData(message);
 });
