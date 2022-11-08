@@ -17,6 +17,6 @@ document.getElementById("tg").addEventListener("submit", function (e) {
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-  name = document.getElementById('tg').this.name.value
+  name = document.getElementById('tg').this.name.value;
   tg.sendData(name);
 });
