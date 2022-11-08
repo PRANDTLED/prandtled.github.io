@@ -17,8 +17,8 @@ let message = `Имя: `;
 // });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-  alert("WOW");
-  const input = document.getElementById("name");
-  message += `${input.value}`;
+//   alert("WOW");
+//   const input = document.getElementById("name");
+//   message += `${input.value}`;
   tg.sendData(message);
 });
