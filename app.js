@@ -17,11 +17,6 @@ document.getElementById("tg").addEventListener("submit", function (e) {
 });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
-  document.getElementById("tg").addEventListener("submit", function (e) {
-  e.preventDefault();
-  message += `<b>Отправитель: </b> ${this.name.value}\n`;
-  message += `<b>Почта: </b> ${this.email.value}\n`;
-  message += `<b>UserId: </b> ${tg.initDataUnsafe.user.id}`;
-});
-  tg.sendData(message);
+  name = document.getElementById('tg').this.name.value
+  tg.sendData(name);
 });
