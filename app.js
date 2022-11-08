@@ -9,16 +9,10 @@ tg.MainButton.show();
 let item = "";
 let message = `Имя: `;
 
-// document.getElementById("tg").addEventListener("submit", function (e) {
-//   e.preventDefault();
-//   message += `<b>Отправитель: </b> ${this.name.value}\n`;
-//   message += `<b>Почта: </b> ${this.email.value}\n`;
-//   message += `<b>UserId: </b> ${tg.initDataUnsafe.user.id}`;
-// });
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
 //   alert("WOW");
-  const input = document.getElementById("name");
+  const input = document.getElementByName("name");
   message += `${input.value}`;
   tg.sendData(message);
 });
