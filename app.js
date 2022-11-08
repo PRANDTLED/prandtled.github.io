@@ -20,8 +20,9 @@ console.log("LOL");
 alert(document.getElementById("name"));
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
 //   alert("WOW");
-//   const input = document.getElementById("name");
-//   message += `${input.value}`;
+     const input = document.getElementById("name");
+     message += `${input.value}`;
+     alert(message);
   console.log("LOL");
   tg.sendData(message);
 });
