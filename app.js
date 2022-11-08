@@ -4,6 +4,7 @@ tg.expand();
 
 tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#0d6efd";
+tg.MainButton.type = "submit";
 tg.MainButton.show();
 
 let item = "";
