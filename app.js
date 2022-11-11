@@ -6,9 +6,6 @@ tg.MainButton.textColor = "#FFFFFF";
 tg.MainButton.color = "#198754";
 tg.MainButton.show();
 
-let item = "";
-let message = `Имя: `;
-
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
   //   alert("WOW");
   let message = `Фильтры\n`;
