@@ -32,6 +32,6 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
   const rooms2 = document.getElementById("btn-check-6-outlined");
   const rooms3 = document.getElementById("btn-check-7-outlined");
   const rooms4 = document.getElementById("btn-check-8-outlined");
-  message += `Тип недвижимости: ${rooms1.checked} ${rooms2.checked} ${rooms3.checked} ${rooms4.checked}\n`;
+  message += `Количество комнат: ${rooms1.checked} ${rooms2.checked} ${rooms3.checked} ${rooms4.checked}\n`;
   tg.sendData(message);
 });
