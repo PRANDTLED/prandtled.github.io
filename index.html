@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,16 +20,16 @@
           <div class="form-group">
             <label class="form-label"> <strong>Город</strong> </label>
             <select id="city" class="form-select">
-              <option selected>Тбилиси</option>
-              <option value="1">Батуми</option>
+              <option selected value="1">Тбилиси</option>
+              <option value="2">Батуми</option>
             </select>
           </div>
           <div class="form-group">
             <label class="form-label mt-2"> <strong>Тип сделки</strong> </label>
             <select id="deal" class="form-select">
-              <option selected value="Аренда">Аренда</option>
-              <option value="Аренда посуточно">Аренда посуточно</option>
-              <option value="Покупка">Покупка</option>
+              <option selected value="3">Аренда</option>
+              <option value="7">Аренда посуточно</option>
+              <option value="1">Покупка</option>
             </select>
             <label class="form-label mt-2"
               ><strong>Тип недвижемого имущества</strong></label
@@ -192,11 +192,11 @@
           <label class="btn btn-outline-success" for="btn-check-8-outlined"
             >4+</label
           >
-<!--           <div>
+          <div>
             <button type="submit" class="btn btn-success mt-4">
               Сохранить
             </button>
-          </div> -->
+          </div>
         </form>
       </div>
     </div>
@@ -208,37 +208,5 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app.js"></script>
-    <!-- <script>
-      const TOKEN = "";
-      document.getElementById("tg").addEventListener("submit", function (e) {
-        e.preventDefault();
-        let message = `Фильтры\n`;
-        const city = document.getElementById("city");
-        message += `Город: ${city.value}\n`;
-        const deal = document.getElementById("deal");
-        message += `Тип сделки: ${deal.value}\n`;
-        const type1 = document.getElementById("btn-check-outlined");
-        const type2 = document.getElementById("btn-check-2-outlined");
-        const type3 = document.getElementById("btn-check-3-outlined");
-        const type4 = document.getElementById("btn-check-4-outlined");
-        message += `Тип недвижимости: ${type1.checked} ${type2.checked} ${type3.checked} ${type4.checked}\n`;
-        const currency1 = document.getElementById("success-outlined");
-        const currency2 = document.getElementById("danger-outlined");
-        message += `Валюта: ${currency1.checked} ${currency2.checked}\n`;
-        const pricefrom = document.getElementById("pricefrom");
-        const priceto = document.getElementById("priceto");
-        message += `Цена: от ${pricefrom.value} до ${priceto.value}\n`;
-        const squarefrom = document.getElementById("squarefrom");
-        const squareto = document.getElementById("squareto");
-        message += `Площадь: от ${squarefrom.value} до ${squareto.value}\n`;
-        message += `Тип сделки: ${deal.value}\n`;
-        const rooms1 = document.getElementById("btn-check-5-outlined");
-        const rooms2 = document.getElementById("btn-check-6-outlined");
-        const rooms3 = document.getElementById("btn-check-7-outlined");
-        const rooms4 = document.getElementById("btn-check-8-outlined");
-        message += `Тип недвижимости: ${rooms1.checked} ${rooms2.checked} ${rooms3.checked} ${rooms4.checked}\n`;
-        console.log(message);
-      });
-    </script> -->
   </body>
 </html>
