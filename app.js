@@ -51,8 +51,8 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
   }
   const squarefrom = document.getElementById("squarefrom");
   const squareto = document.getElementById("squareto");
-  if (pricefrom.value !== "") {
-    if (priceto.value !== "") {
+  if (squarefrom.value !== "") {
+    if (squareto.value !== "") {
       message += `&AreaSizeFrom=${squarefrom.value}&AreaSizeTo=${squareto.value}`;
     }
   }
