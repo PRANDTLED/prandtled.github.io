@@ -23,7 +23,7 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
   }
   const deal = document.getElementById("deal");
   message += `&AdTypeID=${deal.value}`;
-  message_ss_deal += `${deal.value}`;
+  message_ss_deal += `${deal.value}:`;
   const type1 = document.getElementById("btn-check-outlined");
   if (type1.checked === true) {
     message += `&PrTypeID[]=1`;
