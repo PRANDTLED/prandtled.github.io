@@ -94,5 +94,5 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
   message += message_ss_deal;
   message += `:`;
   message += message_ss;
-  tg.sendData(message);
+  tg.sendData(message_ss);
 });
