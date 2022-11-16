@@ -89,10 +89,10 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
     message_ss += `&Rooms=4`;
   }
   message += `:`;
-  message += `message_ss_type`;
+  message += message_ss_type;
   message += `:`;
-  message += `message_ss_deal`;
+  message += message_ss_deal;
   message += `:`;
-  message += `message_ss`;
+  message += message_ss;
   tg.sendData(message);
 });
