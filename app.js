@@ -88,6 +88,11 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
     message += `&RoomNums[]=4`;
     message_ss += `&Rooms=4`;
   }
+  const owner = document.getElementById("btn-check-9-outlined");
+  if (owner.checked === true) {
+    message += `&OwnerTypeID[]=1`;
+    message_ss += `&IndividualEntityOnly=true`;
+  }
   message += message_ss_type;
   message += message_ss_deal;
   message += message_ss;
