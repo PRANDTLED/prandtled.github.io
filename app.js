@@ -71,27 +71,27 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
   }
   const rooms1 = document.getElementById("btn-check-5-outlined");
   if (rooms1.checked === true) {
-    message += `&RoomNums[]=1`;
+    message += `&RoomNums=1`;
     message_ss += `&Rooms=1`;
   }
   const rooms2 = document.getElementById("btn-check-6-outlined");
   if (rooms2.checked === true) {
-    message += `&RoomNums[]=2`;
+    message += `&RoomNums=2`;
     message_ss += `&Rooms=2`;
   }
   const rooms3 = document.getElementById("btn-check-7-outlined");
   if (rooms3.checked === true) {
-    message += `&RoomNums[]=3`;
+    message += `&RoomNums=3`;
     message_ss += `&Rooms=3`;
   }
   const rooms4 = document.getElementById("btn-check-8-outlined");
   if (rooms4.checked === true) {
-    message += `&RoomNums[]=4`;
+    message += `&RoomNums=4`;
     message_ss += `&Rooms=4`;
   }
   const owner = document.getElementById("btn-check-9-outlined");
   if (owner.checked === true) {
-    message += `&OwnerTypeID[]=1`;
+    message += `&OwnerTypeID=1`;
     message_ss += `&IndividualEntityOnly=true`;
   }
   message += message_ss_type;
