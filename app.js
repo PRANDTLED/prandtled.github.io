@@ -56,18 +56,23 @@ Telegram.WebApp.onEvent("mainButtonClicked", function () {
   const pricefrom = document.getElementById("pricefrom");
   const priceto = document.getElementById("priceto");
   if (pricefrom.value !== "") {
-    if (priceto.value !== "") {
-      message += `&FPriceFrom=${pricefrom.value}&FPriceTo=${priceto.value}`;
-      message_ss = `&PriceFrom=${pricefrom.value}&PriceTo=${priceto.value}`;
-    }
+    message += `&FPriceFrom=${pricefrom.value}`;
+    message_ss = `&PriceFrom=${pricefrom.value}`;
+  }
+  if (priceto.value !== "") {
+    message += `&FPriceTo=${priceto.value}`;
+    message_ss = `&PriceTo=${priceto.value}`;
+  
   }
   const squarefrom = document.getElementById("squarefrom");
   const squareto = document.getElementById("squareto");
   if (squarefrom.value !== "") {
-    if (squareto.value !== "") {
-      message += `&AreaSizeFrom=${squarefrom.value}&AreaSizeTo=${squareto.value}`;
-      message_ss += `&QuantityFrom=${squarefrom.value}&QuantityTo=${squareto.value}`;
+    message += `&AreaSizeFrom=${squarefrom.value}`;
+    message_ss += `&QuantityFrom=${squarefrom.value}`;
     }
+  if (squareto.value !== "") {
+    message += `&AreaSizeTo=${squareto.value}`;
+    message_ss += `&QuantityTo=${squareto.value}`;
   }
   const rooms1 = document.getElementById("btn-check-5-outlined");
   if (rooms1.checked === true) {
